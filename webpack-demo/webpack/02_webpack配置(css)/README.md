@@ -1,4 +1,4 @@
-src => js >index.js 这个是默认情况，如果我们把index,.js 换成mian.js 的话他就会报错找不到，这个是因为我们没有配置文件入口的原因
+src => index.js 这个是默认情况，如果我们把index,.js 换成mian.js 的话他就会报错找不到，这个是因为我们没有配置文件入口的原因
 可以通过命令行来指定吗？
 答案是可以的
 >npx webpack --entry ./src/main.js
