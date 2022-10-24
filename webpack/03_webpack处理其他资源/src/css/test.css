@@ -1,6 +1,5 @@
 .content {
-  /* 十六进制一般是几位？rgb 6  rgba 8  大多数浏览器不支持十六进制 需要转化成rgba()*/
-  
+  /* 十六进制通常是写几位 */
   color: #12345678;
 }
 
@@ -9,6 +8,8 @@
 }
 
 .content {
-user-select: none;
-transition: all 0.2s ease;
-} 
+  user-select: none;
+  transition: all 2s ease;
+}
+
+
