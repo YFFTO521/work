@@ -17,7 +17,25 @@ module.exports = {
           // },
           // 注意顺序： 从后往前，从下往上，从右往左
           "style-loader",
-          "css-loader",
+          {
+            loader: 'css-loader',
+            // 处理css @import
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader' 
+          // {
+          //   loader: 'postcss-loader',
+          //   options: {
+          //     postcssOptions: {
+          //       plugins: [
+          //         // require('autoprefixer'),
+          //         'postcss-preset-env'
+          //       ]
+          //     }
+          //   }
+          // }
         ],
         // loader: 'css-loader'
       },
@@ -25,8 +43,14 @@ module.exports = {
         test: /\.less$/,
         use: [
           'style-loader',
-          'css-loader',
-          'less-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2
+            }
+          },
+          'postcss-loader',
+          'less-loader'
         ]
       }
     ],
