@@ -1,0 +1,14 @@
+.content {
+  /* 十六进制一般是几位？rgb 6  rgba 8  大多数浏览器不支持十六进制 需要转化成rgba()*/
+  
+  color: #12345678;
+}
+
+:fullscreen {
+
+}
+
+.content {
+user-select: none;
+transition: all 0.2s ease;
+} 
