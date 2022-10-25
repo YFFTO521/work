@@ -54,6 +54,13 @@ module.exports = {
             maxSize: 1024 * 100
           }
         }
+      },
+      {
+        test: /\.eot|ttf|woff2?$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'font/[name].[hash:6][ext]'
+        }
       }
     ]
   }

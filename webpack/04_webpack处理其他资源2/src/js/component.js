@@ -24,6 +24,11 @@ function component() {
   bgDivEl.style.backgroundColor = "red";
   element.appendChild(bgDivEl);
 
+  // 创建一个i元素，设置一个字体
+  const iEl = document.createElement('i');
+  iEl.className = 'iconfont icon-ashbin why-icon';
+  element.appendChild(iEl);
+
   return element;
 }
 
